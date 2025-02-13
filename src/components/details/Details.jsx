@@ -109,8 +109,8 @@ const Details = () => {
           <p className="ticket-paragraph-i">Attendee Details</p>
           <p className="ticket-paragraph-ii">Step 2/3</p>
         </div>
-        <div className="line-2">
-          <span className="line-i-2"></span>
+        <div className="line">
+          <span className="line-i"></span>
         </div>
       </header>
 

@@ -35,8 +35,8 @@ const SelectTicket = () => {
                     <p className="ticket-paragraph-i">Ticket Selection</p>
                     <p className="ticket-paragraph-ii">Step 1/3</p>
                 </div>
-                <div className="line">
-                    <span className="line-i"></span>
+                <div className="line-2">
+                    <span className="line-i-2"></span>
                 </div>
             </header>
 

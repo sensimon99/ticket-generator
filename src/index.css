@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #02191D;
+}
+.nanum-myeongjo {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.road-rage {
+    font-family: 'Road Rage', sans-serif;
+}
+link {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a3841;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #02191D;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #305861;
+}

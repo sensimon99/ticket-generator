@@ -1,0 +1,95 @@
+nav {
+  max-width: 85vw;
+  display: flex;
+  width: 100%;
+  padding: 12px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #197686;
+  background: rgba(5, 37, 44, 0.40);
+  backdrop-filter: blur(2px);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hugeicons {
+  padding: 6px 8px;
+  border-radius: 12px;
+  border: 1px solid #0E464F;
+  background: #052F35;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-li {
+  color: #B3B3B3;
+  font-family: JejuMyeongjo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-li:hover {
+  color: #00bcd4;
+}
+
+.nav-btn {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(213, 234, 0, 0.10);
+  background: #FFF;
+}
+
+.nav-btn:hover {
+  background: #1e90ff;
+}
+
+.nav-btn-paragraph {
+  color: #0A0C11;
+  font-family: JejuMyeongjo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 737px) {
+  .page {
+    display: flex;
+    padding: 0px 32px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 10px;
+  }
+}

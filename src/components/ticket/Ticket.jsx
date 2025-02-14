@@ -69,7 +69,7 @@ const Ticket = () => {
                                 </div>
                                 <div className='border-right'>
                                     <p className='enter-label'>Ticket Type:</p>
-                                    <p className='value'>{ticketType}</p>
+                                    <p className='value'>{ticketType.split(" ")[0]}</p>
                                 </div>
                                 <div className='border-left'>
                                     <p className='enter-label'>Ticket For:</p>

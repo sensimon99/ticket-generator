@@ -106,9 +106,7 @@
     width: 24px;
     height: 24px;
     margin-left: 10px;
-    /* Space between SVG and input */
     flex-shrink: 0;
-    /* Prevents SVG from shrinking */
 }
 
 .name-span-ii {

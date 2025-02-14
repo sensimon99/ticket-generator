@@ -10,6 +10,7 @@ const Details = () => {
   const [email, setEmail] = useState("");
   const [additionalInfo, setAdditionalInfo] = useState("");
   const [imageUrl, setImageUrl] = useState(localStorage.getItem("uploadedImageUrl") || "");
+  const [ticketType, setTicketType] = useState(localStorage.getItem("selectedTicketType") || "General");
   const [error, setError] = useState("");
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -24,10 +25,7 @@ const Details = () => {
     try {
       const response = await fetch(
         "https://api.cloudinary.com/v1_1/dyfoakkgw/image/upload",
-        {
-          method: "POST",
-          body: formData,
-        }
+        { method: "POST", body: formData }
       );
 
       const data = await response.json();
@@ -97,6 +95,7 @@ const Details = () => {
       localStorage.setItem("userName", name);
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userRequest", additionalInfo);
+      localStorage.setItem("selectedTicketType", ticketType);
 
       navigate("/ticket");
     }
@@ -133,7 +132,6 @@ const Details = () => {
                     <p className="frame-p">Click or Drag & Drop to Upload</p>
                   </>
                 )}
-
               </div>
               <input
                 type="file"
@@ -176,16 +174,14 @@ const Details = () => {
 
           <div className="label-i">
             <p className="number">Special request?</p>
-            <span className="name-span-ii">
-              <textarea
-                value={additionalInfo}
-                onChange={(e) => setAdditionalInfo(e.target.value.slice(0, 10))}
-                maxLength={10}
-              />
-            </span>
+            <textarea
+              className="name-span-ii"
+              value={additionalInfo}
+              onChange={(e) => setAdditionalInfo(e.target.value.slice(0, 10))}
+              maxLength={10}
+            />
             <p className="char-limit">Characters left: {10 - additionalInfo.length}</p>
           </div>
-
 
           {formError && <p className="error-text form-error">{formError}</p>}
 
@@ -199,7 +195,7 @@ const Details = () => {
               className="attenddee-btn-ii"
               disabled={!name || !email || nameError || emailError}
             >
-              Get My Free Ticket
+              Get {ticketType}
             </button>
           </div>
         </form>

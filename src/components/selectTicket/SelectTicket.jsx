@@ -76,12 +76,14 @@ const SelectTicket = () => {
 
                 <div className="label-i">
                     <p className="number">Number of Tickets</p>
-                    <select name="number" id="number" value={ticketCount} onChange={handleTicketCountChange}>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                    <div className="select-wrapper">
+                        <select name="number" id="number" value={ticketCount} onChange={handleTicketCountChange}>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div className="form-buttons">

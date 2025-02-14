@@ -282,8 +282,13 @@ select {
 .btn-link {
     width: 100%;
 }
+
 .btn-link-3 {
     width: 50%;
+}
+.select-wrapper {
+    width: 100%;
+    padding: 10px;
 }
 @media (max-width: 737px) {
     .heading {
@@ -323,16 +328,20 @@ select {
         background: none;
         border-radius: 0px;
     }
+
     .section-text {
         width: 100%;
         padding-bottom: 30px;
     }
+
     .two-lines {
         display: none;
     }
+
     .section-text-i {
         flex-direction: column;
     }
+
     .ticket-options {
         flex-direction: column;
         border-radius: 32px;
@@ -340,9 +349,11 @@ select {
         background: #08252B;
         padding: 20px;
     }
+
     .ticket-option {
         width: 100%;
     }
+
     .form-buttons {
         border-radius: 0;
         border: none;
@@ -353,16 +364,25 @@ select {
         align-items: baseline;
         flex-direction: column-reverse;
     }
+
     .btn-1 {
         width: 100%;
         flex: none;
     }
+
     .btn-link {
         width: 100%;
     }
 }
+
 @media (max-width: 725px) {
-.btn-link-3 {
-    width: 100%;
-}
+    .btn-link-3 {
+        width: 100%;
+    }
+    .select-wrapper {
+        padding: 10px;
+    }
+    select {
+        padding: 10px;
+    }
 }

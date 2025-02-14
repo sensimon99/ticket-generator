@@ -177,10 +177,10 @@ const Details = () => {
             <textarea
               className="name-span-ii"
               value={additionalInfo}
-              onChange={(e) => setAdditionalInfo(e.target.value.slice(0, 10))}
-              maxLength={10}
+              onChange={(e) => setAdditionalInfo(e.target.value.slice(0, 20))}
+              maxLength={20}
             />
-            <p className="char-limit">Characters left: {10 - additionalInfo.length}</p>
+            <p className="char-limit">Characters left: {20 - additionalInfo.length}</p>
           </div>
 
           {formError && <p className="error-text form-error">{formError}</p>}

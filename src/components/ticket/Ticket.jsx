@@ -147,12 +147,25 @@ const Ticket = () => {
                     </clipPath>
                 </defs>
             </svg>
+        
             <div className="tickets-btn">
-                <Link to="/" className="btn-link">
+                <Link
+                    to="/"
+                    className="btn-link"
+                    onClick={() => {
+                        localStorage.removeItem("uploadedImageUrl");
+                        localStorage.removeItem("userName");
+                        localStorage.removeItem("userEmail");
+                        localStorage.removeItem("userRequest");
+                        localStorage.removeItem("selectedTicketType");
+                        localStorage.removeItem("selectedTicketCount");
+                    }}
+                >
                     <button className="attenddee-btn-i">Book Another Ticket</button>
                 </Link>
                 <button className="download-btn">Download Ticket</button>
             </div>
+
         </div>
     );
 };

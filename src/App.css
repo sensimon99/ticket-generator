@@ -17,6 +17,19 @@ nav {
 a {
   text-decoration: none;
 }
+input {
+  border: none;
+  outline: none;
+}
+select {
+  border: none;
+  outline: none;
+}
+textarea {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
 
 .hugeicons {
   padding: 6px 8px;
